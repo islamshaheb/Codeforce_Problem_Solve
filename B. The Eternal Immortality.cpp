@@ -9,12 +9,19 @@ main()
     ll a,b;
     cin>>a>>b;
 
-    if(a==b)cout<<1<<endl;
+    if(a==b)
+        cout<<1<<endl;
     else
     {
         ll rem=1;
-        for(ll i=a+1; i<=b; i++)rem=(rem*i)%10,if(rem==0)break;
-        cout<<rem<<endl;
+      for(ll i=a+1; i<=b; i++) {
+        rem=(rem*i)%10;
+        //cout<<rem<<endl;
+        if(rem==0) {
+            break;
+        }
+    }
+    cout<<rem<<endl;
 
     }
 
